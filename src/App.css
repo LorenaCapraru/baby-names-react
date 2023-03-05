@@ -36,3 +36,29 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  color: white;
+  font-weight: bold;
+  overflow: hidden;
+}
+
+#root {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.babyBoy {
+  padding: 5px;
+  border-radius: 10px;
+  background-color: lightblue;
+  margin: 3px;
+  color: #0077b6;
+}
+.babyGirl {
+  padding: 5px;
+  background-color: pink;
+  border-radius: 10px;
+  margin: 3px;
+  color: #ff5d8f;
+}
