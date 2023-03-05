@@ -1,12 +1,14 @@
 import "./App.css";
 import data from "./babyNamesData.json";
-import SplitGender from "./SplitGender";
+// import SplitGender from "./SplitGender";
+import Search from "./Search";
 
 function App() {
   return (
-    <>
-      <SplitGender data={data} />
-    </>
+    <div className="container">
+      <Search search={data} />
+      {/* <SplitGender data={data} /> */}
+    </div>
   );
 }
 

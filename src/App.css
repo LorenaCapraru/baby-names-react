@@ -42,11 +42,31 @@ body {
   font-weight: bold;
   overflow: hidden;
 }
-
-#root {
+.listOfNames {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
+}
+input {
+  width: 40%;
+  border-color: lightblue;
+  padding: 1%;
+  margin: 5% 0;
+  border-width: 2px;
+  border-radius: 10px;
+}
+.container {
+  border: 3px solid lightblue;
+  border-radius: 10px;
+  border-width: 3px;
+  border-top-color: lightblue;
+  border-right-color: pink;
+  border-bottom-color: pink;
+  border-left-color: lightblue;
+
+  margin: 5%;
+  padding: 1%;
 }
 .babyBoy {
   padding: 5px;
@@ -61,4 +81,11 @@ body {
   border-radius: 10px;
   margin: 3px;
   color: #ff5d8f;
+}
+
+.searchDiv {
+  color: #0077b6;
+}
+.searchDiv {
+  padding-left: 35%;
 }
