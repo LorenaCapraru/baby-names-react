@@ -2,7 +2,7 @@ import { useState, React } from "react";
 import data from "./babyNamesData.json";
 import SplitGender from "./SplitGender";
 
-export default function Search({ search }) {
+export default function Search() {
   const [searchInput, setSearchInput] = useState("");
 
   function handleSearchInput(event) {
