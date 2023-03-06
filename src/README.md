@@ -8,7 +8,7 @@ Make a React app which shows some baby names and lets you pick your favourites. 
 
 ## Difficulty Level
 
-This is a beginner challenge.  Level one can be completed by any student who has done week 1 of the CYF React module.
+This is a beginner challenge. Level one can be completed by any student who has done week 1 of the CYF React module.
 
 The later levels are suitable from students who have completed at least week 2 of the CYF React module.
 
@@ -29,11 +29,11 @@ The later levels are suitable from students who have completed at least week 2 o
 
 **Don't** clone this repo.
 
-Make your own React app using `create-react-app`.  See [(this guide)](https://docs.codeyourfuture.io/students/guides/creating-a-react-app) if you have forgotten how.
+Make your own React app using `create-react-app`. See [(this guide)](https://docs.codeyourfuture.io/students/guides/creating-a-react-app) if you have forgotten how.
 
 Copy across the names file (or its contents) from this repo to your app, and then import from that file.
 
-Write a plain HTML prototype (e.g. on codepen).  THEN, once you know the HTML you're attempting to create, work on the React version!  This is not mandatory but it is recommended.
+Write a plain HTML prototype (e.g. on codepen). THEN, once you know the HTML you're attempting to create, work on the React version! This is not mandatory but it is recommended.
 
 ### The data:
 
@@ -56,15 +56,15 @@ so...
 
 # Level 1 Challenge
 
-* Write a react app which lists baby names from the given file.
+- Write a react app which lists baby names from the given file.
 
-* It should display boys' and girls' names differently - your choice*
+- It should display boys' and girls' names differently - your choice\*
 
-* The names should be displayed in alphabetical order, ascending.
+- The names should be displayed in alphabetical order, ascending.
 
-* Your project should be on GitHub and Netlify with correct names (see Hosting, above).
+- Your project should be on GitHub and Netlify with correct names (see Hosting, above).
 
-(*) Please, please feel free to break from the the "blue-for-boys/pink-for-girls" stereotyping and style it differently.  The best creative solution will be included in this challenge document for subsequent cohorts to admire.
+(\*) Please, please feel free to break from the the "blue-for-boys/pink-for-girls" stereotyping and style it differently. The best creative solution will be included in this challenge document for subsequent cohorts to admire.
 
 ### Example Screenshot
 
@@ -72,13 +72,13 @@ so...
 
 # Level 2 challenge
 
-* Add a search bar.
+- Add a search bar.
 
-* When someone types into it, your app should update the displayed list of baby names to only show matches.
+- When someone types into it, your app should update the displayed list of baby names to only show matches.
 
-* Matches should be case-insensitive.
+- Matches should be case-insensitive.
 
-* When the search bar is clear, all names should be shown.
+- When the search bar is clear, all names should be shown.
 
 ### Example Screenshot
 
@@ -86,12 +86,12 @@ so...
 
 # Level 3 challenge
 
-* Add "favourites".
+- Add "favourites".
 
-* When the user clicks a name from the main list, it should be moved to a "favourites" list, displayed separately.
-It should disappear from the main list!
+- When the user clicks a name from the main list, it should be moved to a "favourites" list, displayed separately.
+  It should disappear from the main list!
 
-* When the user clicks a name from the _favourites_ list, it should be moved back to the main list.  It should disappear from the favourites list!
+- When the user clicks a name from the _favourites_ list, it should be moved back to the main list. It should disappear from the favourites list!
 
 ### Example Screenshot
 
@@ -123,7 +123,7 @@ If there is also a search term in effect, your app should apply any name gender 
 - Add the ability for the user to shuffle the list of names
 - Add the ability for the user to be presented with one or two randomly chosen names.
 - Find an attractive way to differentiate names by gender that doesn't use blue/pink stereotypes.
-- Add some suitably-themed sound effects for the UI.  Josh W Comeau's [useSound hook](https://www.joshwcomeau.com/react/announcing-use-sound-react-hook/) can help here, as can [freesound.org](https://freesound.org/)
+- Add some suitably-themed sound effects for the UI. Josh W Comeau's [useSound hook](https://www.joshwcomeau.com/react/announcing-use-sound-react-hook/) can help here, as can [freesound.org](https://freesound.org/)
 
 ## Further resources
 
