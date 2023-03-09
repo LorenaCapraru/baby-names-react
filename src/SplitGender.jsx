@@ -13,12 +13,16 @@ export default function SplitGender(props) {
     }
     return 0;
   });
-  
+
   const listOfNames = sortedNames.map((baby) =>
     baby.sex === "m" ? (
-      <span className="babyBoy">{baby.name}</span>
+      <span className="babyBoy" onClick={() => props.handleClick(baby.id)}>
+        {baby.name}
+      </span>
     ) : (
-      <span className="babyGirl">{baby.name}</span>
+      <span className="babyGirl" onClick={() => props.handleClick(baby.id)}>
+        {baby.name}
+      </span>
     )
   );
   return <div className="listOfNames">{listOfNames}</div>;

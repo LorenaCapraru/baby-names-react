@@ -1,5 +1,6 @@
 import "./App.css";
 import data from "./babyNamesData.json";
+
 // import SplitGender from "./SplitGender";
 import Search from "./Search";
 

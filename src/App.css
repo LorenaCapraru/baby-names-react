@@ -92,3 +92,11 @@ input {
 .searchDiv {
   padding-left: 35%;
 }
+
+.favouriteList {
+  color: #0077b6;
+  text-align: center;
+  border: 3px solid pink;
+  border-radius: 10px;
+  margin-bottom: 2%;
+}
