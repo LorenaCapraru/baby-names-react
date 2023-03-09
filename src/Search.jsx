@@ -10,13 +10,13 @@ export default function Search() {
 
   const [mainList, setMainList] = useState(data);
   const [favoriteList, setFavoriteList] = useState([]);
-  
+
   function addToFavorites(id) {
     const nameIndex = mainList.findIndex((name) => name.id === id);
     const newMainList = [...mainList];
     const removedName = newMainList.splice(nameIndex, 1);
     setMainList(newMainList);
-    setFavoriteList([...favoriteList, removedName[0]]);
+    setFavoriteList(favoriteList.concat(removedName));
   }
 
   function removeFromFavorites(id) {
@@ -24,7 +24,7 @@ export default function Search() {
     const newFavoritesList = [...favoriteList];
     const removedName = newFavoritesList.splice(nameIndex, 1);
     setFavoriteList(newFavoritesList);
-    setMainList([...mainList, removedName[0]]);
+    setMainList(mainList.concat(removedName));
   }
 
   const filteredNames = data
