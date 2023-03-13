@@ -100,3 +100,15 @@ input {
   border-radius: 10px;
   margin-bottom: 2%;
 }
+
+.radioButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.radioButton label {
+  color: grey;
+}
+.radioButton input {
+  width: 2%;
+}

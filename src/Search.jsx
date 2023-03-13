@@ -4,12 +4,32 @@ import SplitGender from "./SplitGender";
 
 export default function Search() {
   const [searchInput, setSearchInput] = useState("");
-  function handleSearchInput(event) {
-    setSearchInput(event.target.value);
-  }
 
   const [mainList, setMainList] = useState(data);
   const [favoriteList, setFavoriteList] = useState([]);
+
+  const [boyList, setBoyList] = useState([]);
+  const [girlList, setGirlList] = useState([]);
+  const [all, setAll] = useState([]);
+
+  function resetAllList() {
+    let newList = [...data];
+    return setAll(newList);
+  }
+
+  function returnBoyList() {
+    let newList = data.filter((el) => el.sex === "m");
+    return setBoyList(newList);
+  }
+
+  function returnGirlList() {
+    let newList = data.filter((el) => el.sex === "f");
+    return setBoyList(newList);
+  }
+
+  function handleSearchInput(event) {
+    setSearchInput(event.target.value);
+  }
 
   function addToFavorites(id) {
     const nameIndex = mainList.findIndex((name) => name.id === id);
@@ -62,13 +82,40 @@ export default function Search() {
           onChange={handleSearchInput}
         />
       </div>
+      <div className="radioButton">
+        <input
+          type="radio"
+          id="allGender"
+          name="genderSelector"
+          onClick={resetAllList}
+        />
+        <label for="allGender">All</label>
+        <input
+          type="radio"
+          id="boySelector"
+          name="genderSelector"
+          onClick={returnBoyList}
+        />
+        <label for="boySelector">BOYS</label>
+        <input
+          type="radio"
+          id="girlSelector"
+          name="genderSelector"
+          onClick={returnGirlList}
+        />
+        <label for="girlSelector">GIRLS</label>
+      </div>
       <div className="favouriteList">
         <h2>Favorites:</h2>
         <SplitGender data={favoriteList} handleClick={removeFromFavorites} />
       </div>
       <div className="searchOutput">
         {searchInput === "" ? (
-          <SplitGender data={mainList} handleClick={addToFavorites} />
+          boyList.length === 0 && girlList.length === 0 && all.length === 0 ? (
+            <SplitGender data={data} handleClick={addToFavorites} />
+          ) : (
+            <SplitGender data={boyList} handleClick={addToFavorites} />
+          )
         ) : (
           filteredNames
         )}
